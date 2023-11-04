@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "first-package-python"
+version = "0.1.0"
+description = "Proyecto destinado al aprendizaje de Poetry"
+authors = ["Laura"]
+readme = "README.md"
+
+# Gestión de dependencias. 
+#Para agregar dependencias usar comando: `poetry add <nombre_libreria>`
+[tool.poetry.dependencies]
+python = "^3.10"
+
+#Dependencias para desarrollo (linters, test, formateo...)
+# poetry add -D flake8
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
